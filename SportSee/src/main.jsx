@@ -1,19 +1,25 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import React from 'react'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Header from './components/Header.jsx'
-import Profil from './pages/Profil.jsx'
-import './assets/styles/main.scss'
-
+// src/main.jsx
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header.jsx';
+import Profile from './pages/Profile.jsx';
+import Sidebar from './components/Sidebar.jsx';
+import './assets/styles/main.scss';
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
         <Router>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Profil />} />
-            </Routes>
+            <div className="main-container">
+                <Header />
+                <div className="content-container">
+                    <Sidebar />
+                    <Routes>
+                        <Route path="/" element={<Profile />} />
+                    </Routes>
+                </div>
+            </div>
         </Router>
     </StrictMode>
-)
+);

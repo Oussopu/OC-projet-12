@@ -62,7 +62,7 @@ video {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   text-size-adjust: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Thin', sans-serif;
 }
 
 footer,
@@ -95,4 +95,27 @@ table {
 input {
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
 }

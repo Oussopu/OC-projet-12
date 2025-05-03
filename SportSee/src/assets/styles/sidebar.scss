@@ -1,5 +1,5 @@
 .App-sidebar {
-  height: 100%;
+  height: calc(100vh - 9vh);
   width: 8%;
   background-color: #000000;
   display: flex;
@@ -16,7 +16,6 @@
   }
   .copyright {
     font-size: 12px;
-    font-family: 'Roboto Thin', sans-serif;
     color: #ffffff;
     transform: rotate(-90deg);
     width: 100%;
