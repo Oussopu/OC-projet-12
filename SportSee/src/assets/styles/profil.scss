@@ -47,8 +47,10 @@
         .objectives-container, .intensity-container, .score-container {
           height: 210px;
           width: 220px;
-          background-color: #FF0000;
           border-radius: 5px;
+        }
+        .objectives-container {
+          background-color: #FF0000;
         }
         .intensity-container {
           background-color: #282D30;

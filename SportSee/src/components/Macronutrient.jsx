@@ -1,20 +1,19 @@
 import React from 'react'
 import '../assets/styles/macronutrient.scss'
-import image from '../assets/images/kcal.svg'
 
 
-function Macronutrient() {
+function Macronutrient({ score, title, imageSrc, backgroundColor }) {
     return (
         <div className='macronutrient-content'>
-            <div className='macronutrient-image'>
-                <img src={image} alt=""/>
+            <div className='macronutrient-image' style={{ backgroundColor }}>
+                <img src={imageSrc} alt={title}/>
             </div>
             <div className='macronutrient-info'>
-                <div className='macronutriment-score'>
-                    <h2>1,990</h2>
+                <div className='macronutrient-score'>
+                    <h2>{score}</h2>
                 </div>
-                <div className='macronutriment-title'>
-                    <p>calories</p>
+                <div className='macronutrient-title'>
+                    <p>{title}</p>
                 </div>
             </div>
         </div>
