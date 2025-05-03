@@ -48,8 +48,10 @@
 .profil-main .results-container .graphs-container .info-container .objectives-container, .profil-main .results-container .graphs-container .info-container .intensity-container, .profil-main .results-container .graphs-container .info-container .score-container {
   height: 210px;
   width: 220px;
-  background-color: #FF0000;
   border-radius: 5px;
+}
+.profil-main .results-container .graphs-container .info-container .objectives-container {
+  background-color: #FF0000;
 }
 .profil-main .results-container .graphs-container .info-container .intensity-container {
   background-color: #282D30;
