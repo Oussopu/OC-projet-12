@@ -1,0 +1,16 @@
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .macronutrient-content {
+    padding-left: 10%;
+  }
+  .macronutrient-content .macronutrient-info {
+    padding-left: 10%;
+  }
+  .macronutrient-content .macronutrient-info .macronutrient-score h2 {
+    font-size: 18px;
+  }
+  .macronutrient-content .macronutrient-info .macronutrient-title p {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=media-macronutrient.css.map */

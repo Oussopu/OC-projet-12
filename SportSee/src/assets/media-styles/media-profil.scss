@@ -1,0 +1,18 @@
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .profil-main {
+    .results-container {
+      .graphs-container {
+        .info-container {
+          .objectives-container,
+          .intensity-container,
+          .score-container {
+            height: 180px;
+            width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
