@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/styles/macronutrient.scss'
+import '../assets/media-styles/media-macronutrient.scss'
 
 function Macronutrient({ score, title, imageSrc, backgroundColor }) {
   return (

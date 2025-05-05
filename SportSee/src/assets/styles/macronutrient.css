@@ -11,9 +11,11 @@
   padding-left: 15%;
 }
 .macronutrient-content .macronutrient-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 60px;
   width: 60px;
-  background-color: black;
   border-radius: 6px;
 }
 .macronutrient-content .macronutrient-info {
@@ -30,11 +32,6 @@
 .macronutrient-content .macronutrient-info .macronutrient-title p {
   font-size: 16px;
   color: #74798c;
-}
-.macronutrient-content .macronutrient-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=macronutrient.css.map */

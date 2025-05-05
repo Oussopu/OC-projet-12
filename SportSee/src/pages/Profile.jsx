@@ -1,4 +1,5 @@
 import '../assets/styles/profil.scss'
+import '../assets/media-styles/media-profil.scss'
 import React, { useContext } from 'react'
 import { DataContext } from '../services/dataContext.jsx'
 import Macronutrient from '../components/Macronutrient.jsx'
