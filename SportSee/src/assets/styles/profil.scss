@@ -44,16 +44,18 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        .objectives-container, .intensity-container, .score-container {
+        .objectives-container,
+        .intensity-container,
+        .score-container {
           height: 210px;
           width: 220px;
           border-radius: 5px;
         }
         .objectives-container {
-          background-color: #FF0000;
+          background-color: #ff0000;
         }
         .intensity-container {
-          background-color: #282D30;
+          background-color: #282d30;
         }
         .score-container {
           background-color: rgba(250, 250, 250);
@@ -61,5 +63,4 @@
       }
     }
   }
-
 }
