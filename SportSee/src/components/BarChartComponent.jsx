@@ -25,10 +25,11 @@ const CustomTooltip = ({ active, payload }) => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
+          fontSize: '12px',
         }}
       >
-        <p>{payload[0].value}</p>
-        <p>{payload[1].value}</p>
+        <p>{payload[0].value + 'kg'}</p>
+        <p>{payload[1].value + 'kcal'}</p>
       </div>
     )
   }

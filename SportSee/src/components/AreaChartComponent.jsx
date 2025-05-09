@@ -18,6 +18,7 @@ const CustomTooltip = ({ active, payload }) => {
           backgroundColor: '#ffffff',
           color: '#000000',
           padding: '10px',
+          fontSize: '12px',
         }}
       >
         <p>{payload[0].value + ' min'}</p>

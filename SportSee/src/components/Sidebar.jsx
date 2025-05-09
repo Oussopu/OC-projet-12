@@ -6,14 +6,32 @@ import swimIcon from '../assets/images/swiming.svg'
 import bikeIcon from '../assets/images/cycling.svg'
 import muscleIcon from '../assets/images/bodybuilding.svg'
 
+const sportIcons = [
+  {
+    src: yogaIcon,
+    alt: 'Yoga',
+  },
+  {
+    src: swimIcon,
+    alt: 'Natation',
+  },
+  {
+    src: bikeIcon,
+    alt: 'Vélo',
+  },
+  {
+    src: muscleIcon,
+    alt: 'Musculation',
+  },
+]
+
 function Sidebar() {
   return (
     <div className="App-sidebar">
       <div className="sport-icons">
-        <SportIcon src={yogaIcon} alt="Yoga" />
-        <SportIcon src={swimIcon} alt="Natation" />
-        <SportIcon src={bikeIcon} alt="Vélo" />
-        <SportIcon src={muscleIcon} alt="Musculation" />
+        {sportIcons.map((icon, index) => (
+          <SportIcon key={index} src={icon.src} alt={icon.alt} />
+        ))}
       </div>
       <p className="copyright">Copyright, SportSee 2020</p>
     </div>

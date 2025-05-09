@@ -10,7 +10,7 @@ import {
   standardizeUserAverageSessions,
   standardizeUserPerformance,
   standardizeUserData,
-} from './dataUtils'
+} from './mapper.jsx'
 
 export const DataContext = createContext()
 

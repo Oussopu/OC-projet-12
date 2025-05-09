@@ -15,6 +15,37 @@ import fatImage from '../assets/images/fat.svg'
 function Profile() {
   const { userData } = useContext(DataContext)
 
+  if (!userData || !userData.keyData) {
+    return <div></div>
+  }
+
+  const macronutrientIcons = [
+    {
+      score: `${userData.keyData.calorieCount}kCal`,
+      title: 'Calories',
+      imageSrc: kcalImage,
+      backgroundColor: 'rgba(255, 0, 0, 0.1)',
+    },
+    {
+      score: `${userData.keyData.proteinCount}g`,
+      title: 'Protéines',
+      imageSrc: protImage,
+      backgroundColor: 'rgba(0, 0, 255, 0.1)',
+    },
+    {
+      score: `${userData.keyData.carbohydrateCount}g`,
+      title: 'Glucides',
+      imageSrc: carbImage,
+      backgroundColor: 'rgba(249,206,35, 0.1)',
+    },
+    {
+      score: `${userData.keyData.lipidCount}g`,
+      title: 'Lipides',
+      imageSrc: fatImage,
+      backgroundColor: 'rgba(253,81,129, 0.1)',
+    },
+  ]
+
   return (
     <div className="profil-main">
       <div className="title-main">
@@ -41,34 +72,15 @@ function Profile() {
           </div>
         </div>
         <div className="macronutrients-container">
-          {userData?.keyData && (
-            <>
-              <Macronutrient
-                score={`${userData.keyData.calorieCount}kCal`}
-                title="Calories"
-                imageSrc={kcalImage}
-                backgroundColor="rgba(255, 0, 0, 0.1)"
-              />
-              <Macronutrient
-                score={`${userData.keyData.proteinCount}g`}
-                title="Protéines"
-                imageSrc={protImage}
-                backgroundColor="rgba(0, 0, 255, 0.1)"
-              />
-              <Macronutrient
-                score={`${userData.keyData.carbohydrateCount}g`}
-                title="Glucides"
-                imageSrc={carbImage}
-                backgroundColor="rgba(249,206,35, 0.1)"
-              />
-              <Macronutrient
-                score={`${userData.keyData.lipidCount}g`}
-                title="Lipides"
-                imageSrc={fatImage}
-                backgroundColor="rgba(253,81,129, 0.1)"
-              />
-            </>
-          )}
+          {macronutrientIcons.map((icon, index) => (
+            <Macronutrient
+              key={index}
+              score={icon.score}
+              title={icon.title}
+              imageSrc={icon.imageSrc}
+              backgroundColor={icon.backgroundColor}
+            />
+          ))}
         </div>
       </div>
     </div>
