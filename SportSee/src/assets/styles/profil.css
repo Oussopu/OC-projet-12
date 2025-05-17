@@ -1,3 +1,12 @@
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: red;
+  font-size: 2rem;
+}
+
 .profil-main {
   height: 91vh;
   width: 92%;
@@ -45,44 +54,20 @@
   display: flex;
   justify-content: space-between;
 }
-.profil-main
-  .results-container
-  .graphs-container
-  .info-container
-  .objectives-container,
-.profil-main
-  .results-container
-  .graphs-container
-  .info-container
-  .intensity-container,
-.profil-main
-  .results-container
-  .graphs-container
-  .info-container
-  .score-container {
+.profil-main .results-container .graphs-container .info-container .objectives-container,
+.profil-main .results-container .graphs-container .info-container .intensity-container,
+.profil-main .results-container .graphs-container .info-container .score-container {
   height: 210px;
   width: 220px;
   border-radius: 5px;
 }
-.profil-main
-  .results-container
-  .graphs-container
-  .info-container
-  .objectives-container {
+.profil-main .results-container .graphs-container .info-container .objectives-container {
   background-color: #ff0000;
 }
-.profil-main
-  .results-container
-  .graphs-container
-  .info-container
-  .intensity-container {
+.profil-main .results-container .graphs-container .info-container .intensity-container {
   background-color: #282d30;
 }
-.profil-main
-  .results-container
-  .graphs-container
-  .info-container
-  .score-container {
+.profil-main .results-container .graphs-container .info-container .score-container {
   background-color: rgb(250, 250, 250);
 }
 
