@@ -13,7 +13,15 @@ import carbImage from '../assets/images/carb.svg'
 import fatImage from '../assets/images/fat.svg'
 
 function Profile() {
-  const { userData } = useContext(DataContext)
+  const { userData, error } = useContext(DataContext)
+
+  if (error) {
+    return (
+      <div className="error-message">
+        <a>Erreur : Impossible de récupérer les données</a>
+      </div>
+    )
+  }
 
   if (!userData || !userData.keyData) {
     return <div></div>

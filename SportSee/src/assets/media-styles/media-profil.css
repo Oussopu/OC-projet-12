@@ -1,19 +1,7 @@
 @media (min-width: 1024px) and (max-width: 1300px) {
-  .profil-main
-    .results-container
-    .graphs-container
-    .info-container
-    .objectives-container,
-  .profil-main
-    .results-container
-    .graphs-container
-    .info-container
-    .intensity-container,
-  .profil-main
-    .results-container
-    .graphs-container
-    .info-container
-    .score-container {
+  .profil-main .results-container .graphs-container .info-container .objectives-container,
+  .profil-main .results-container .graphs-container .info-container .intensity-container,
+  .profil-main .results-container .graphs-container .info-container .score-container {
     height: 180px;
     width: 180px;
   }
